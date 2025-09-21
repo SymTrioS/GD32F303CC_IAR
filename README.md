@@ -1,4 +1,5 @@
 # GD32F303CC_IAR
-# Example project for Prime-S73P board
+# Sample Project for the Prime-S73P Board
 # GD32F303CCT6 microcontroller
+# First Edition
 
