@@ -68,7 +68,7 @@ int main(void)
         ads13fmV = -ads13fmV; // ADS1120: AIN1<->AIN3 inversion
         delay_1ms(800);
         getADCgw(gwADC121);   // Get data from two ADC121 connected to the FPGA GW1NR 
-        printf("DacA=%d, ADS_13=%d, ADS_mV=%f\r\n", dacAdat, ads13dat, ads13fmV);
+        printf("DacB=%d, ADS_13=%d, ADS_mV=%f\r\n", dacBdat, ads13dat, ads13fmV);
         printf("eADC1=%d, eADC2=%d\r\n", gwADC121[0], gwADC121[1]);
         dacAdat+=5; if (dacAdat>4095) dacAdat=0;
         dacBdat+=5; if (dacBdat>4095) dacBdat=0;
@@ -82,3 +82,4 @@ int fputc(int ch, FILE *f)
     usart_data_transmit(COM2, (uint16_t)ch);
     return ch;
 }
+
